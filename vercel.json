@@ -1,6 +1,14 @@
 {
-  "framework": "vite",
   "buildCommand": "pnpm build",
-  "outputDirectory": ".output/public",
-  "installCommand": "pnpm install"
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ]
 }

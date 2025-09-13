@@ -1,11 +1,6 @@
 {
+  "framework": "vite",
   "buildCommand": "pnpm build",
   "outputDirectory": ".output/public",
-  "installCommand": "pnpm install",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/server"
-    }
-  ]
+  "installCommand": "pnpm install"
 }

@@ -9,6 +9,7 @@ yarn.lock
 .output
 .nitro
 /build/
+/api/
 /server/build
 /public/build# Sentry Config File
 .env.sentry-build-plugin

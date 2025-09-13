@@ -1,7 +1,11 @@
 {
   "buildCommand": "pnpm build",
   "outputDirectory": ".output/public",
-  "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
-  "framework": null
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/server"
+    }
+  ]
 }

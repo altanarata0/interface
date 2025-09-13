@@ -1,0 +1,18 @@
+{
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".output/public",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "functions": {
+    ".output/server/index.mjs": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/server"
+    }
+  ]
+}
